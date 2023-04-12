@@ -1,0 +1,126 @@
+.container-fluid{
+  background-image: url('images/BackgroundLogin.png');
+}
+
+.infinity-image-container{
+  background-size: cover;
+  opacity: 0.9;
+  height: 100vh;
+  background: #C32270;
+}
+
+.infinity-image-container img{
+  display: flex;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 400px;
+  width: 60%;
+}
+
+
+.infinity-form-container{
+  background: #F6F6F6;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.infinity-form{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  min-height: 100vh;
+}
+
+.infinity-form h4 {
+  font-weight: bold;
+  color: #000000;
+}
+
+.infinity-form .form-input {
+  position: relative;
+}
+
+.infinity-form .form-input input {
+  width: 100%;
+  margin-bottom: 20px;
+  height: 40px;
+  border: none;
+  border-radius: 5px;
+  outline: none;
+  background: white;
+  padding-left: 45px;
+}
+
+.infinity-form .form-input span {
+  position: absolute;
+  top: 8px;
+  padding-left: 20px;
+  color: #777;
+}
+
+.infinity-form .form-input input:focus,
+.infinity-form .form-input input:valid {
+  border: 2px solid #4285f4;   
+}
+
+.infinity-form input[type="checkbox"]:not(:checked) + label:before{
+  background: transparent;
+  border:2px solid white;
+  width: 15px;
+  height: 15px;
+}
+
+.infinity-form .custom-checkbox .custom-control-input:checked ~ .custom-control-label::before {
+background-color: #4285f4 !important;
+border:0px;
+}
+
+.infinity-form button[type="submit"] {
+  margin-top: 20px;
+  border: none;
+  cursor: pointer;
+  border-radius: 20px;
+  background: #C32270;   /*Button Color*/
+  color: #fff;
+  font-weight: bold;
+  transition: 0.5s;
+}
+
+.infinity-form .inputBx p{
+  font-size: 20px;
+  color: #000000;
+  font-weight: bold;
+}
+
+.infinity-form .inputBx a{
+  font-size: 20px;
+  color: #C32270;
+  font-weight: bold;
+  text-decoration: underline;
+  padding-left: 5px;
+}
+
+
+.forget-link , .login-link , .register-link {
+  color: #000000;
+  font-weight: bold;
+  font-size: 20px;
+}
+
+.forget-link:hover , .login-link:hover , .register-link:hover {
+  color: #C32270;
+  text-decoration: none;
+}
+
+.infinity-form .btn-social {
+  color: white;
+  border: 0;
+  display: inline-block;
+  margin: 0px;
+  margin-right: 10px;
+  font-weight: bold;
+  padding: 0px;
+  margin-bottom: 10px;
+}
