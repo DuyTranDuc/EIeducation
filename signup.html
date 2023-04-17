@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-	<title>Login</title>
+	<title>Sign Up</title>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 	<link href="style.css" rel="stylesheet" type="text/css">
@@ -29,34 +29,43 @@
 			      <h4>Chào mừng bạn đã đến với EI Germany!</h4>
 			    </div>
 			    <!-- Form -->
-					<form class="px-3" onsubmit="login()">
+					<form class="px-3" onsubmit="signup()">
 						<!-- Input Box -->
 						<div class="form-input">
+							<span><i class="fa fa-user-circle-o"></i></span>
+							<input id="username" type="text" placeholder="Họ và tên" required />
+						</div>
+						<div class="form-input">
 							<span><i class="fa fa-envelope-o"></i></span>
-							<input id="email" type="text" name="" placeholder="Email/Số điện thoại" tabindex="10"required>
+							<input id="email" type="text" placeholder="Email/Số điện thoại" required />
+						</div>
+						<div class="form-input">
+							<span><i class="fa fa-map-marker"></i></span>
+							<input id="address" type="text" placeholder="Địa chỉ" required />
 						</div>
 						<div class="form-input">
 							<span><i class="fa fa-lock"></i></span>
-							<input id="password" type="password" name="" placeholder="Mật khẩu"required>
+							<input id="password"type="password"placeholder="Mật khẩu"required />
+						</div>
+						<div class="form-input">
+							<span><i class="fa fa-lock"></i></span>
+							<input id="password"type="password"placeholder="Xác nhận mật khẩu"required />
 						</div>
 						<div class="row mb-3">
 			 	    </div>
 			 	    <!-- Login Button -->
 			      		<div class="mb-4"> 
-							<button type="submit" class="btn btn-block">Đăng nhập</button>
+							<button type="submit" class="btn btn-block">Đăng ký</button>
 						</div>
-						<div class="text-right">
-			        		<a href="reset.html" class="forget-link">Quên mật khẩu?</a>
-			      		</div>
 						<div class="inputBx text-center">
-							<p>Bạn chưa có tài khoản?<a href="./signup.html">Đăng ký ngay</a></p>
+							<p>Bạn đã có tài khoản?<a href="./login.html">Đăng nhập ngay</a></p>
 						</div>
 					</form>
-				</div>					
+				</div>				
 			</div>
 			<!-- FORM CONTAINER END -->
 		</div>
-	</div>
-	<script src="./main.js"></script>	
+	</div>	
 </body>
+<script src="./main.js"></script>	
 </html>
