@@ -13,6 +13,7 @@ function signup(e){
     var json = JSON.stringify(user);
     localStorage.setItem(email, json);
     alert("Đăng ký thành công !");
+    window.location.href = "login.html"
 }
 function login(e){
     event.preventDefault();
