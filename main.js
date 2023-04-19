@@ -32,3 +32,18 @@ function login(e){
         alert("Đăng nhập thất bại !");
     }
 }
+function reset(e){
+    event.preventDefault();
+    var email = document.getElementById("email").value;
+    var user = localStorage.getItem(email);
+    var data = JSON.parse(user);
+    if(user == null){
+        alert("Vui lòng nhập đầy đủ thông tin !");
+    }
+    else if(email == data.email){
+        window.location.href = "otp.html"
+    }
+    else{
+        alert("Email không tồn tại!");
+    }
+}
